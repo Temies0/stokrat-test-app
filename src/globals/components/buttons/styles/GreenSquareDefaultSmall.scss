@@ -1,0 +1,24 @@
+@import '../../../themes/base-theme.scss';
+@import '../../../fonts/fonts.scss';
+
+.green-square-default-small {
+	height: 46px;
+	background-color: $success-1;
+	border-bottom: $success-2 solid 3px;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	transition: 0.07s ease-in;
+	width: 100%;
+	&:active {
+		background-color: $success-2;
+	}
+}
+
+.green-square-default-small-content {
+	color: $base-black;
+	@include bold-header-1;
+	display: flex;
+	margin: 3px auto 0 auto;
+	gap: 6px;
+}

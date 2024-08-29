@@ -1,0 +1,36 @@
+@import '../../../globals/themes/base-theme.scss';
+@import '../../../globals/fonts/fonts.scss';
+
+.main-body {
+	background-color: $primary-light-1;
+	background-image: url('../../../globals/images/main/backmain.png');
+	background-position-y: 56px;
+	background-position-x: center;
+	min-height: 606px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	min-height: calc(100vh - 201px);
+	align-items: center;
+}
+
+footer {
+	flex-direction: column;
+	display: flex;
+	row-gap: 1rem;
+	margin-top: auto;
+}
+
+.task-sub {
+	padding: 0 1rem;
+}

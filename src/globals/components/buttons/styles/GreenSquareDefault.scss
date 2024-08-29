@@ -1,0 +1,26 @@
+@import '../../../themes/base-theme.scss';
+@import '../../../fonts/fonts.scss';
+
+.green-square-default-big {
+	height: 53px;
+	background-color: $success-1;
+	border-bottom: $success-2 solid 3px;
+	border-radius: 1rem;
+	max-width: 430px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	transition: 0.07s ease-in;
+
+	&:active {
+		background-color: $success-2;
+	}
+}
+
+.green-square-default-big-content {
+	color: $gs-0;
+	@include bold-header-1;
+	display: flex;
+	margin: 3px auto 0 auto;
+	gap: 6px;
+}

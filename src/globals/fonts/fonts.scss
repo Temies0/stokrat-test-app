@@ -1,0 +1,81 @@
+// Titles
+
+@mixin bold-title-1 {
+	font-size: 34px;
+	line-height: 41px;
+	font-weight: bold;
+}
+
+@mixin bold-title-2 {
+	font-size: 28px;
+	line-height: 34px;
+	font-weight: bold;
+}
+
+@mixin bold-title-3 {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+// Header
+
+@mixin bold-header-1 {
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+@mixin semibold-header-1 {
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: 600;
+}
+
+// Body
+
+@mixin bold-body-1 {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+@mixin semibold-body-1 {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+@mixin regular-body-1 {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: normal;
+}
+
+// Caption
+
+@mixin bold-caption-1 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+@mixin semibold-caption-1 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 600;
+}
+
+@mixin regular-caption-1 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+// Micro
+
+@mixin semibold-micro {
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: 600;
+}

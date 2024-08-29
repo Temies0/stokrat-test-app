@@ -1,0 +1,124 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.profile-crypto-scroll-container {
+	background-color: $primary-light-1;
+	display: flex;
+	max-height: 56px;
+	width: 100%;
+	min-width: 0;
+	justify-content: center;
+}
+
+.inner-scrollbar-container {
+	display: flex;
+	padding: 8px 0 8px 1rem;
+	align-items: center;
+	min-width: 0;
+}
+
+.crypto-currency-wrapper {
+	display: flex;
+	max-height: 40px;
+	white-space: nowrap;
+	z-index: 0;
+	min-width: 0;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden {
+	padding-right: 1rem;
+}
+
+.crypto-image {
+	max-width: 24px;
+	max-height: 24px;
+}
+
+.crypto-card {
+	padding: 8px;
+	display: inline-flex;
+	min-width: 0;
+	white-space: nowrap;
+	align-items: center;
+	border-radius: 12px;
+	gap: 4px;
+	// width: min-content;
+	background-color: $base-white;
+}
+
+.total-crypto-balance {
+	@include bold-body-1;
+	color: $base-black;
+}
+
+.profile-image {
+	max-width: 40px;
+	max-height: 40px;
+	position: relative;
+	left: -2px;
+}
+
+.profile-container {
+	background-color: $primary-light-1;
+	height: 100%;
+	width: 124px;
+	z-index: 2;
+}
+
+.profile-wrapper {
+	background-color: $base-white;
+	border: $gs-9 solid 2px;
+	min-width: 0;
+	width: 116px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	margin-right: 8px;
+	max-height: 40px;
+}
+
+.title-profile-balance {
+	padding: 0 8px;
+	color: $base-black;
+	@include bold-body-1;
+}
+
+.profile-wrapper,
+.crypto-card {
+	transition: all 0.2s ease-out;
+}
+
+@media only screen and (hover: none) {
+
+	.profile-wrapper:active,
+	.crypto-card:active {
+		background-color: $gs-9;
+	}
+}
+
+@media only screen and (hover: hover) {
+
+	.profile-wrapper:hover,
+	.crypto-card:hover {
+		cursor: pointer;
+		background-color: $gs-9;
+	}
+
+	.profile-wrapper:active,
+	.crypto-card:active {
+		background-color: $base-white;
+	}
+}
+
+.crypto-card {
+	flex-shrink: 2;
+}
+
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-prev,
+.swiper-slide {
+	display: inline-flex !important;
+	width: auto !important;
+	min-width: 0 !important;
+}

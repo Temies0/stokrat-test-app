@@ -1,0 +1,26 @@
+@import '../../../globals/themes/base-theme.scss';
+@import '../../../globals/fonts/fonts.scss';
+
+.tasks-main-container {
+	max-width: 462px;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto 0 auto;
+	padding: 0 1rem;
+	row-gap: 1rem;
+}
+
+body,
+html {
+	min-height: 100vh;
+}
+
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin-top: auto;
+}

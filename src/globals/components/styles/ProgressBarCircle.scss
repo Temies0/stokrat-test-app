@@ -1,0 +1,18 @@
+@import '../../../globals/themes/base-theme.scss';
+@import '../../../globals/fonts/fonts.scss';
+
+circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+text {
+	color: $gs-0;
+	@include bold-body-1;
+}
+
+.progress-circle-container {
+	min-height: 4rem;
+	min-width: 4rem;
+}

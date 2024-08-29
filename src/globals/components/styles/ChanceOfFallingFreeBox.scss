@@ -1,0 +1,24 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.chance-of-falling-free-box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 8px;
+	padding: 1rem;
+}
+
+.box-image-chance {
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 140px;
+	max-height: 140px;
+}
+
+.name-box-title {
+	display: inline-block;
+	margin: 0 auto;
+	color: $base-black;
+	@include bold-title-3
+}

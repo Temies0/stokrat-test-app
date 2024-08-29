@@ -1,0 +1,50 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.footer-navigation-container {
+	display: flex;
+	background-color: $gs-10;
+	border-radius: 1.5rem 1.5rem 0 0;
+	width: 100%;
+	z-index: 2;
+	// margin-top: auto;
+}
+
+.inner-footer-navigation-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 8px 8px 4px 8px;
+	gap: 4px;
+	max-width: 430px;
+	margin: 0 auto;
+}
+
+.button-navigation {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: transparent;
+	padding: 2px 0 6px 0;
+}
+
+.footer-title {
+	@include semibold-micro;
+	color: $gs-7;
+}
+
+.active-button-navigation {
+	background-color: $success-1;
+	border-radius: 20px;
+
+	.footer-title {
+		color: $gs-0;
+	}
+}
+
+.footer-icon {
+	width: 2rem;
+	height: 2rem;
+}

@@ -1,0 +1,65 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.tap-for-free-box-container {
+	&:active {
+		transform: scale(0.99);
+	}
+}
+
+#tap-for-free-box-container {
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	justify-content: center;
+	max-height: 300px;
+	transition: transform 0.07s ease-out;
+}
+
+#tap-content {
+	max-height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.tap-content {
+	&::before {
+		z-index: 2;
+		top: 19px;
+		left: -29px;
+		content: url('../../images/main/free.svg');
+		position: absolute;
+	}
+}
+
+.boxcoin {
+	margin: 0 auto;
+	min-width: 300px;
+	min-height: 300px;
+	background-image: url('../../images/main/boxcoin.svg');
+	background-size: 100%;
+	transition: background-image 1s ease-in;
+}
+
+.counter {
+	@include bold-title-1;
+	color: $success-3;
+	bottom: 74px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.boxcoin[disabled] {
+	background-image: url('../../images/main/boxcoin_timer.svg');
+}
+
+.timer {
+	@include bold-title-1;
+	display: none;
+	color: $gs-5;
+	bottom: 74px;
+	position: relative;
+	justify-content: center;
+	transition: color 0.3s ease-in;
+}

@@ -1,0 +1,29 @@
+@import '../../../globals/themes/base-theme.scss';
+@import '../../../globals/fonts/fonts.scss';
+
+.box-task-list {
+	padding: 12px;
+	display: flex;
+	background-color: $primary-light-1;
+	border-radius: 20px;
+	max-width: 430px;
+	width: 100%;
+}
+
+.task-title {
+	color: $gs-0;
+	@include bold-body-1;
+}
+
+.reward-for-tasks-image {
+	max-width: 4rem;
+	max-height: 4rem;
+}
+
+.box-task-list-inner-container {
+	display: flex;
+	max-height: 4rem;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}

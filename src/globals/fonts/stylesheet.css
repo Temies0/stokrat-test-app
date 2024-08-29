@@ -1,0 +1,34 @@
+@font-face { /* Bold */
+	font-family: 'San Francisco Pro';
+	src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
+			url('./SFProDisplay-Bold.woff2') format('woff2'),
+			url('./SFProDisplay-Bold.woff') format('woff'),
+			url('./SFProDisplay-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'San Francisco Pro';
+	src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+			url('SFProDisplay-Regular.woff2') format('woff2'),
+			url('SFProDisplay-Regular.woff') format('woff'),
+			url('SFProDisplay-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'San Francisco Pro';
+	src: local('San Francisco Pro Display Semibold'), local('San-Francisco-Pro-Display-Semibold'),
+			url('SFProDisplay-Semibold.woff2') format('woff2'),
+			url('SFProDisplay-Semibold.woff') format('woff'),
+			url('SFProDisplay-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	font-family: 'San Francisco Pro';
+	font-style: normal;
+}

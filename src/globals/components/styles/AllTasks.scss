@@ -1,0 +1,13 @@
+@import '../../../globals/themes/base-theme.scss';
+@import '../../../globals/fonts/fonts.scss';
+
+.all-tasks-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.all-tasks-title {
+	color: $gs-0;
+	@include bold-title-3;
+}

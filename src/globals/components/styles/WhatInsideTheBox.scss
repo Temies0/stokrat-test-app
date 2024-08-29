@@ -1,0 +1,61 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.what-inside-the-box-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+	padding-bottom: 0;
+	max-width: 430px;
+	width: 100% !important;
+	margin: 0 auto;
+	margin-top: 1rem
+}
+
+.what-inside-title {
+	@include bold-title-3;
+	color: $gs-0;
+	padding: 0 1rem;
+}
+
+.what-inside-lists ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.box-content-icon {
+	display: inline-block;
+	max-width: 42px;
+	max-height: 42px;
+}
+
+.box-content-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 1rem 11px 1rem;
+	gap: 12px;
+	border-bottom: $gs-9 solid 1px;
+	border-width: 100%;
+
+	&:nth-last-child(-n + 1) {
+		padding: 12px 1rem;
+		border-bottom: none;
+	}
+}
+
+.box-content-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.box-content-name-title {
+	@include semibold-header-1;
+	color: $gs-0;
+}
+
+.box-content-quantity {
+	@include semibold-header-1;
+	color: $gs-0;
+}

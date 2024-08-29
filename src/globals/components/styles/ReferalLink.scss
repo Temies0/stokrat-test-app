@@ -1,0 +1,59 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.reward-for-each-friend-wrapper {
+	display: flex;
+	color: $gs-1;
+	align-items: center;
+	gap: 4px;
+	@include bold-title-3;
+}
+
+.referal-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.reward-kratcoin-for-each {
+	max-width: 1rem;
+	max-height: 1rem;
+}
+
+.referal-form-container {
+	background-color: $primary-light-1;
+	border-radius: 1rem;
+	max-width: 430px;
+}
+
+.inner-referal-wrapper {
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+
+.referal-link-form {
+	background-color: $base-white;
+	border-radius: 12px;
+	padding: 5px 6px;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+
+.referal-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 0 6px;
+}
+
+.referal-title {
+	color: $gs-5;
+	@include regular-caption-1;
+}
+
+.referal-link {
+	color: $gs-0;
+	@include regular-body-1;
+}

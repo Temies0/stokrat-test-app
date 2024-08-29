@@ -1,0 +1,83 @@
+@import '../../themes/base-theme.scss';
+@import '../../fonts/fonts.scss';
+
+.task-list-container,
+.task-list-form,
+.inner-task-list {
+	display: flex;
+}
+
+.task-list-container {
+	justify-content: center;
+}
+
+.task-list-form {
+	background-color: $primary-light-1;
+	border: $primary-light-2 solid 2px;
+	max-width: 430px;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.inner-task-list {
+	justify-content: space-between;
+	padding: 10px;
+	gap: 12px;
+	width: 100%;
+	align-items: center;
+}
+
+.reward-currency {
+	max-width: 1rem;
+	max-height: 1rem;
+}
+
+.reward-quantity {
+	color: $gs-5;
+	@include semibold-caption-1;
+}
+
+.task-list-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.reward-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.social-image-container {
+	background-color: $primary-2;
+	display: flex;
+	min-width: 40px;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+}
+
+.social-image {
+	max-width: 24px;
+	max-height: 24px;
+	display: flex;
+}
+
+.task-title {
+	color: $gs-1;
+	@include semibold-header-1;
+}
+
+.button-state {
+	color: $gs-0;
+	@include bold-caption-1;
+	background-color: $base-white;
+	border-radius: 100px;
+	padding: 7px 12px;
+	display: flex;
+	max-height: min-content;
+	max-height: 2rem;
+}
